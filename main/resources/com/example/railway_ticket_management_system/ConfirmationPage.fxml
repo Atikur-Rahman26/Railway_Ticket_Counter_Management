@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1020.0" style="-fx-background-color: #d8d9eb;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.railway_ticket_management_system.ConfirmationPage">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="50.0" prefWidth="1020.0" style="-fx-background-color: #081280;" AnchorPane.bottomAnchor="649.6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="exit" fitHeight="35.0" fitWidth="39.0" layoutX="971.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="minimize" fitHeight="25.0" fitWidth="35.0" layoutX="923.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/minimize.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="50.0" prefHeight="650.0" prefWidth="1020.0" AnchorPane.bottomAnchor="649.6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView blendMode="OVERLAY" fitHeight="650.0" fitWidth="1020.0" layoutX="65.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-0.6000000000000227" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="85.44061279296875" AnchorPane.topAnchor="51.0">
+         <image>
+            <Image url="@image/back.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="873.0" layoutY="629.0" onAction="#home" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: #322670;" text="Home" textFill="#b79999">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <HBox layoutX="65.0" layoutY="109.0" prefHeight="50.0" prefWidth="737.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="186.0" text="Name">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="26.0" text=":">
+               <font>
+                  <Font name="Times New Roman Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="NamE" prefHeight="50.0" prefWidth="568.0">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="65.0" layoutY="159.0" prefHeight="50.0" prefWidth="737.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="186.0" text="NID">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="26.0" text=":">
+               <font>
+                  <Font name="Times New Roman Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="NiD" prefHeight="50.0" prefWidth="568.0">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="65.0" layoutY="209.0" prefHeight="50.0" prefWidth="737.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="186.0" text="Departure">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="26.0" text=":">
+               <font>
+                  <Font name="Times New Roman Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="DEParture" prefHeight="50.0" prefWidth="568.0">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="65.0" layoutY="259.0" prefHeight="50.0" prefWidth="737.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="186.0" text="Destination">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="26.0" text=":">
+               <font>
+                  <Font name="Times New Roman Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="DEstination" prefHeight="50.0" prefWidth="568.0">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="65.0" layoutY="309.0" prefHeight="50.0" prefWidth="737.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="186.0" text="Train">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="26.0" text=":">
+               <font>
+                  <Font name="Times New Roman Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="TRaiN" prefHeight="50.0" prefWidth="568.0">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="65.0" layoutY="359.0" prefHeight="50.0" prefWidth="737.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="186.0" text="Date">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="26.0" text=":">
+               <font>
+                  <Font name="Times New Roman Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="DaTe" prefHeight="50.0" prefWidth="568.0">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="65.0" layoutY="409.0" prefHeight="50.0" prefWidth="737.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="186.0" text="Compartment">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="26.0" text=":">
+               <font>
+                  <Font name="Times New Roman Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="ComPartment" prefHeight="50.0" prefWidth="568.0">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="65.0" layoutY="459.0" prefHeight="50.0" prefWidth="737.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="186.0" text="Seat">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="26.0" text=":">
+               <font>
+                  <Font name="Times New Roman Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="SeaT" prefHeight="50.0" prefWidth="568.0">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="65.0" layoutY="509.0" prefHeight="50.0" prefWidth="737.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="186.0" text="Persons">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="26.0" text=":">
+               <font>
+                  <Font name="Times New Roman Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="PersonS" prefHeight="50.0" prefWidth="568.0">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="65.0" layoutY="559.0" prefHeight="50.0" prefWidth="737.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="186.0" text="Bill">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="26.0" text=":">
+               <font>
+                  <Font name="Times New Roman Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="BiLL" prefHeight="50.0" prefWidth="568.0">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="434.0" layoutY="58.0" text="Ticket">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

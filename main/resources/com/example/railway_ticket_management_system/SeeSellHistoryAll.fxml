@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1020.0" style="-fx-background-color: #d8d9eb;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.railway_ticket_management_system.SeeSellHistoryAll">
+    <children>
+        <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="50.0" prefWidth="1020.0" style="-fx-background-color: #081280;" AnchorPane.bottomAnchor="649.6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fx:id="exit" fitHeight="35.0" fitWidth="39.0" layoutX="971.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/exit.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="minimize" fitHeight="25.0" fitWidth="35.0" layoutX="923.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/minimize.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="50.0" prefHeight="650.0" prefWidth="1020.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+            <children>
+                <ImageView blendMode="OVERLAY" fitHeight="650.0" fitWidth="901.0" layoutX="75.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/back.png" />
+                    </image>
+                </ImageView>
+                <ComboBox fx:id="NameComboBoxForSell" layoutX="183.0" layoutY="113.0" onAction="#SelectNameFromComboBox" prefHeight="51.0" prefWidth="225.0" promptText="Name" style="-fx-background-color: #b8bdf5; -fx-background-radius: 60;" />
+                <ComboBox fx:id="DateComboBoxForSell" layoutX="595.0" layoutY="113.0" onAction="#SelectDateFromComboBox" prefHeight="51.0" prefWidth="225.0" promptText="Date" style="-fx-background-color: #b8bdf5; -fx-background-radius: 60;" />
+                <VBox layoutX="170.0" layoutY="258.0" prefHeight="295.0" prefWidth="186.0">
+                    <children>
+                        <Label prefHeight="106.0" prefWidth="190.0" text="Name">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="106.0" prefWidth="190.0" text="Total Ticket ">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="116.0" prefHeight="119.0" prefWidth="186.0" text="Total Sell">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="199.0" prefHeight="119.0" prefWidth="186.0" text="Date">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="356.0" layoutY="258.0" prefHeight="295.0" prefWidth="410.0">
+                    <children>
+                        <Label fx:id="NaMe" prefHeight="70.0" prefWidth="410.0">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="TT" layoutX="10.0" layoutY="10.0" prefHeight="81.0" prefWidth="410.0">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="TS" layoutX="10.0" layoutY="116.0" prefHeight="96.0" prefWidth="410.0">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="DaTe" layoutX="10.0" layoutY="199.0" prefHeight="93.0" prefWidth="445.0">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            <JFXButton layoutX="883.0" layoutY="585.0" onAction="#Home" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: #322670;" text="Home" textFill="#b79999">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="416.0" layoutY="26.0" text="See Sell History" underline="true">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

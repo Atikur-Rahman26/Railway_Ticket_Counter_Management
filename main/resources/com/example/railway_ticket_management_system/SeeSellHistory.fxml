@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1020.0" style="-fx-background-color: #d8d9eb;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.railway_ticket_management_system.SeeSellHistory">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="50.0" prefWidth="1020.0" style="-fx-background-color: #081280;" AnchorPane.bottomAnchor="649.6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="exit" fitHeight="35.0" fitWidth="39.0" layoutX="971.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="minimize" fitHeight="25.0" fitWidth="35.0" layoutX="923.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/minimize.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="threebar" blendMode="SOFT_LIGHT" fitHeight="39.0" fitWidth="41.0" layoutX="23.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/threebar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="50.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView blendMode="OVERLAY" fitHeight="713.0" fitWidth="871.0" layoutX="71.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/back.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="DateComboBox" layoutX="417.0" layoutY="120.0" onAction="#SelectDate" prefHeight="51.0" prefWidth="256.0" promptText="Date" style="-fx-background-color: #b8bdf5; -fx-background-radius: 30;" />
+            <Label layoutX="448.0" layoutY="28.0" text="Sell History" underline="true">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="35.0" />
+               </font>
+            </Label>
+            <VBox layoutX="148.0" layoutY="238.0" prefHeight="241.0" prefWidth="210.0">
+               <children>
+                  <Label prefHeight="144.0" prefWidth="210.0" text="Total Ticket:">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="99.0" prefWidth="210.0" text="Total Sell:">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="358.0" layoutY="238.0" prefHeight="241.0" prefWidth="210.0">
+               <children>
+                  <Label fx:id="Total_TickeT" prefHeight="144.0" prefWidth="210.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="31.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Total_SEll" layoutX="10.0" layoutY="10.0" prefHeight="99.0" prefWidth="210.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <JFXButton layoutX="890.0" layoutY="586.0" onAction="#HomE" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: #322670;" text="Home" textFill="#b79999">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="MenuPane" prefHeight="700.0" prefWidth="1020.0" style="-fx-background-color: #000000;" />
+      <AnchorPane fx:id="sideBar" prefHeight="644.0" prefWidth="250.0" style="-fx-background-color: #16097d;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <VBox layoutY="44.0" prefHeight="306.0" prefWidth="250.0">
+               <children>
+                  <JFXButton onAction="#Home" prefHeight="61.0" prefWidth="255.0" style="-fx-background-color: #3e064d;" text="Home" textFill="#176fcc">
+                     <font>
+                        <Font name="Times New Roman Bold" size="33.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="10.0" onAction="#BookTicket" prefHeight="61.0" prefWidth="255.0" style="-fx-background-color: #3e064d;" text="Book Ticket" textFill="#176fcc">
+                     <font>
+                        <Font name="Times New Roman Bold" size="33.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="72.0" onAction="#SeeSellHistory" prefHeight="61.0" prefWidth="255.0" style="-fx-background-color: #3e064d;" text="See Sell Histroy" textFill="#176fcc">
+                     <font>
+                        <Font name="Times New Roman Bold" size="30.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="133.0" onAction="#TrainSchedule" prefHeight="61.0" prefWidth="255.0" style="-fx-background-color: #3e064d;" text="Train Schedule" textFill="#176fcc">
+                     <font>
+                        <Font name="Times New Roman Bold" size="29.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="195.0" onAction="#LogOUT" prefHeight="61.0" prefWidth="255.0" style="-fx-background-color: #3e064d;" text="Log Out" textFill="#176fcc">
+                     <font>
+                        <Font name="Times New Roman Bold" size="33.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

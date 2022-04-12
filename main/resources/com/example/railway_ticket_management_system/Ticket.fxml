@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1020.0" style="-fx-background-color: #d8d9eb;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.railway_ticket_management_system.Seat">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="50.0" prefWidth="1020.0" style="-fx-background-color: #081280;" AnchorPane.bottomAnchor="650.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="exit" fitHeight="35.0" fitWidth="39.0" layoutX="971.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../RTCM/src/main/resources/com/example/gui/image/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="minimize" fitHeight="25.0" fitWidth="35.0" layoutX="923.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../RTCM/src/main/resources/com/example/gui/image/minimize.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="40.0" prefHeight="658.0" prefWidth="1020.0" style="-fx-background-color: #d8d9eb;" AnchorPane.topAnchor="40.0">
+         <children>
+            <ImageView blendMode="OVERLAY" fitHeight="658.0" fitWidth="880.0" layoutX="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../RTCM/src/main/resources/com/example/gui/image/back.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="seat1" layoutX="135.0" layoutY="33.0" onAction="#SEAT1" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat2" layoutX="257.0" layoutY="33.0" onAction="#SEAT2" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat3" layoutX="135.0" layoutY="97.0" onAction="#SEAT3" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="3">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat4" layoutX="257.0" layoutY="97.0" onAction="#SEAT3" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="4">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat5" layoutX="135.0" layoutY="164.0" onAction="#SEAT5" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="5">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat6" layoutX="257.0" layoutY="164.0" onAction="#SEAT6" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="6">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat7" layoutX="135.0" layoutY="228.0" onAction="#SEAT7" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="7">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat8" layoutX="257.0" layoutY="228.0" onAction="#SEAT8" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="8">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat9" layoutX="135.0" layoutY="293.0" onAction="#SEAT9" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="9">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat10" layoutX="257.0" layoutY="293.0" onAction="#SEAT10" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="10">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat11" layoutX="135.0" layoutY="357.0" onAction="#SEAT11" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="11">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat12" layoutX="257.0" layoutY="357.0" onAction="#SEAT12" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="12">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat13" layoutX="135.0" layoutY="424.0" onAction="#SEAT13" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="13">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat14" layoutX="257.0" layoutY="424.0" onAction="#SEAT14" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="14">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat15" layoutX="135.0" layoutY="488.0" onAction="#SEAT15" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="15">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat16" layoutX="257.0" layoutY="488.0" onAction="#SEAT16" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="16">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat17" layoutX="469.0" layoutY="33.0" onAction="#SEAT17" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="17">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat18" layoutX="591.0" layoutY="33.0" onAction="#SEAT18" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="18">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat19" layoutX="469.0" layoutY="97.0" onAction="#SEAT19" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="19">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat20" layoutX="591.0" layoutY="97.0" onAction="#SEAT20" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="20">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat21" layoutX="469.0" layoutY="164.0" onAction="#SEAT21" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="21">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat22" layoutX="591.0" layoutY="164.0" onAction="#SEAT22" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="22">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat23" layoutX="469.0" layoutY="228.0" onAction="#SEAT23" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="23">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat24" layoutX="591.0" layoutY="228.0" onAction="#SEAT24" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="24">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat25" layoutX="469.0" layoutY="293.0" onAction="#SEAT25" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="25">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat26" layoutX="591.0" layoutY="293.0" onAction="#SEAT26" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="26">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat27" layoutX="469.0" layoutY="357.0" onAction="#SEAT27" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="27">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat28" layoutX="591.0" layoutY="357.0" onAction="#SEAT28" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="28">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat29" layoutX="469.0" layoutY="424.0" onAction="#SEAT29" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="29">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat30" layoutX="591.0" layoutY="424.0" onAction="#SEAT30" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="30">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat31" layoutX="469.0" layoutY="488.0" onAction="#SEAT31" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="31">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seat32" layoutX="591.0" layoutY="488.0" onAction="#SEAT32" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: green;" text="32">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="804.0" layoutY="585.0" onAction="#Confirm" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: #322670;" text="Confirm" textFill="#b79999">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

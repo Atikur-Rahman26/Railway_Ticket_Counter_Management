@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1020.0" style="-fx-background-color: #d8d9eb;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.railway_ticket_management_system.Home">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="50.0" prefWidth="1020.0" style="-fx-background-color: #081280;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="exit" fitHeight="35.0" fitWidth="39.0" layoutX="971.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="minimize" fitHeight="25.0" fitWidth="35.0" layoutX="923.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/minimize.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="50.0" prefHeight="650.0" prefWidth="1020.0" AnchorPane.bottomAnchor="650.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+      <ImageView blendMode="OVERLAY" fitHeight="650.0" fitWidth="1020.0" layoutX="66.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="84.44061279296875" AnchorPane.topAnchor="50.0">
+         <image>
+            <Image url="@image/back.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="175.0" layoutY="182.0" onAction="#BookTicket" prefHeight="87.0" prefWidth="292.0" style="-fx-border-radius: 50; -fx-background-radius: 60; -fx-background-color: #322670;" text="Book Ticket" textFill="#b79999">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="36.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="576.0" layoutY="182.0" onAction="#TrainSchedule" prefHeight="87.0" prefWidth="292.0" style="-fx-border-radius: 50; -fx-background-radius: 60; -fx-background-color: #322670;" text="Train Schedule" textFill="#b79999">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="36.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="175.0" layoutY="315.0" onAction="#SeeSellHistory" prefHeight="87.0" prefWidth="292.0" style="-fx-border-radius: 50; -fx-background-radius: 60; -fx-background-color: #322670;" text="See Sell Histroy" textFill="#b79999">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="36.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="582.0" layoutY="315.0" onAction="#LogOut" prefHeight="87.0" prefWidth="292.0" style="-fx-border-radius: 50; -fx-background-radius: 60; -fx-background-color: #322670;" text="Log out" textFill="#b79999">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="36.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

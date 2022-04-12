@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.railway_ticket_management_system.WelcomePage">
+   <children>
+      <AnchorPane fx:id="welcome" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1020.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="66.0" prefWidth="1020.0" style="-fx-background-color: #081280;" AnchorPane.bottomAnchor="634.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="429.0" layoutY="-5.0" text="RTCM" textFill="#3562cc">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="54.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="68.0" layoutY="634.0" prefHeight="66.0" prefWidth="1020.0" style="-fx-background-color: #081280;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="634.0">
+               <children>
+                  <Label layoutX="338.0" layoutY="15.0" text="RAILWAY TICKET COUNTER MANAGESMENT" textFill="#3562cc">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="27.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="64.0" layoutX="243.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/LogoRTCM.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="592.0" fitWidth="1020.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/welcome_RtCM.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loginpage" prefHeight="700.0" prefWidth="1020.0">
+         <children>
+            <AnchorPane prefHeight="50.0" prefWidth="1020.0" style="-fx-background-color: #081280;">
+               <children>
+                  <ImageView fx:id="exit" fitHeight="35.0" fitWidth="39.0" layoutX="971.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/exit.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="minimize" fitHeight="25.0" fitWidth="35.0" layoutX="923.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/minimize.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="59.0" prefHeight="643.0" prefWidth="965.0" style="-fx-background-color: #d8d9eb;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <ImageView blendMode="OVERLAY" fitHeight="700.0" fitWidth="1008.0" layoutX="32.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/back.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" layoutX="227.0" layoutY="250.0" onAction="#Admin" prefHeight="250.0" prefWidth="230.0" ripplerFill="#2b0404" style="-fx-background-color: white;">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <graphic>
+                        <Label alignment="CENTER" blendMode="MULTIPLY" contentDisplay="TOP" prefHeight="249.0" prefWidth="211.0" text="Admin" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="190.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/Admin.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="667.0" layoutY="250.0" onAction="#User" prefHeight="250.0" prefWidth="220.0" ripplerFill="#885cb5" style="-fx-background-color: white;">
+                     <graphic>
+                        <Label alignment="CENTER" blendMode="MULTIPLY" contentDisplay="TOP" prefHeight="201.0" prefWidth="199.0" style="-fx-background-color: white;" text="user" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="250.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/userImage.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+                  <Label layoutX="432.0" layoutY="73.0" text="Log in as" textFill="#2e3a99">
+                     <font>
+                        <Font name="System Bold Italic" size="51.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
